@@ -1,0 +1,8 @@
+<h1>Page {{.Title}}</h1>
+
+<div>{{printf "%s" .Name}}</div>
+
+<form action="/save" method="POST">
+    <div><textarea name="body" rows="20" cols="80">{{printf "%s" .Body}}</textarea></div>
+    <div><input type="submit" value="Save"></div>
+</form>
